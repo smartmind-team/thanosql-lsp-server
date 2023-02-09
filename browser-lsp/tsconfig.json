@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "WebWorker"],
+    "outDir": "dist",
+    "declarationDir": "dist"
+  },
+  "include": ["src/**/*.ts", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"],
+  "references": [
+    { "path": "./tsconfig.node.json" },
+    { "path": "../thanosql-language-service" }
+  ]
+}

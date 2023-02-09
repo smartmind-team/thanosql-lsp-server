@@ -1,0 +1,26 @@
+{
+  "name": "thanosql-language-service",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "scripts": {
+    "clean": "npx shx rm -rf dist",
+    "build": "npm run clean && tsc",
+    "antlr": "read -p 'enter file name: ' file && antlr4ts ./ANTLR/${file}.g4 -o ."
+  },
+  "author": "Sowon Jung <sowonjung@smartmind.team>",
+  "license": "MIT",
+  "devDependencies": {
+    "antlr4ts": "^0.5.0-alpha.4",
+    "antlr4ts-cli": "^0.5.0-alpha.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartmind-team/thanosql-lsp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smartmind-team/thanosql-lsp-server/issues"
+  },
+  "homepage": "https://github.com/smartmind-team/thanosql-lsp-server#readme",
+  "description": ""
+}
