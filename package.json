@@ -1,0 +1,38 @@
+{
+  "name": "thanosql-lsp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npm run clean --workspaces",
+    "build": "npm run clean && npm run build:browser-lsp && npm run build:lsp-server && npm run build:thanosql-language-service",
+    "build:browser-lsp": "npm run build --workspaces browser-lsp",
+    "build:lsp-server": "npm run build --workspaces lsp-server",
+    "build:thanosql-language-service": "npm run build --workspaces thanosql-language-service"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartmind-team/thanosql-lsp-server.git"
+  },
+  "keywords": [
+    "lsp",
+    "lsp-server",
+    "monaco-editor",
+    "thanoSQL"
+  ],
+  "author": "Sowon Jung<sowonjung@smartmind.team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smartmind-team/thanosql-lsp-server/issues"
+  },
+  "homepage": "https://github.com/smartmind-team/thanosql-lsp-server#readme",
+  "workspaces": [
+    "browser-lsp",
+    "lsp-server",
+    "thanosql-language-service"
+  ],
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "typescript": "^4.9.5"
+  }
+}
